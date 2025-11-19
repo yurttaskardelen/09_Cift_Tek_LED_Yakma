@@ -9,13 +9,13 @@ Bu depo, `08` numaralı projedeki **"paralel dizi"** yönteminin geliştirilmiş
 
 Bu yöntem, karmaşık desenleri veya animasyon adımlarını "veri" olarak (dizilerde) saklayarak ana kod bloğunu (`while(1)`) son derece temiz ve kısa tutmayı sağlar.
 
-> **💡 Tekniklerin Kombinasyonu**
+> **💡 Alternatif Yöntem (Algoritmik Yaklaşım)**
 >
-> Bu proje, önceki projelerde öğrendiğimiz iki güçlü tekniği birleştirir:
+> Bu projede (`09`), LED durumlarını belirlemek için hafızada yer kaplayan diziler (lookup table) kullandık.
 >
-> 1.  **Paralel Dizi (`08`):** `for` döngüsü ve `led_durum_...[]` dizileri kullanılarak LED'ler *yakılır*.
-> 2.  **Bitwise OR (`06`):** `HAL_GPIO_WritePin(..., PIN_1 | PIN_2 | ...)` komutu kullanılarak tüm LED'ler tek seferde, verimli bir şekilde *söndürülür*.
-
+> Aynı işlemi hiç dizi kullanmadan, sadece matematiksel mantık (Bitwise & Ternary Operatör) ile yaparak hafıza (RAM) tasarrufu sağlayan versiyon için:
+>
+> ➡️ **[10_Cift_Tek_LED_Yakma_Ternary (Algoritmik Yöntem)](https://github.com/yurttaskardelen/10_Cift_Tek_LED_Yakma_Ternary)**
 ---
 
 ### 🎯 Proje Senaryosu
